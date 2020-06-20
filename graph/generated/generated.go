@@ -223,6 +223,10 @@ var sources = []*ast.Source{
   todos: [Todo!]!
 }
 `, BuiltIn: false},
+	&ast.Source{Name: "schema/schema.graphql", Input: `schema {
+  query: Query
+}
+`, BuiltIn: false},
 	&ast.Source{Name: "schema/types/todo.graphql", Input: `type Todo {
   id: ID!
   text: String!
